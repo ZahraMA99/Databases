@@ -16,3 +16,8 @@ We use data types for several reasons.<br/>
 - Some string data types can only hold short strings, such as a string up to 250 characters.<br/>
 - Storing short strings in a small data type like this saves storage space.<br/>
 - SQL's VARCHAR data type is more flexible and can store small or large strings - up to tens of thousands of characters! Because of its flexibility, VARCHAR is very commonly used for storing strings.
+
+## Integers :blossom:
+**Integer data types store whole numbers** <br/>
+- such as the years in the member_year column of the patrons table.<br/>
+- Just as with strings, SQL offers a few different data types for storing integers, depending on how big the numbers we'd like to store are. INT, a common SQL integer data type, can store numbers from less than negative two billion to more than positive two billion!
