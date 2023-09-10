@@ -4,4 +4,4 @@ SQL is a powerful language used by data-driven businesses, large and small, to e
 ### I'm there wrote my notes on a lectures introduced by DataCamp website.:bell:
 - courses: 
 1. Introduction to SQL course
-2. Data Menagment in SQL.
+2. Data Menagment in SQL
