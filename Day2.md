@@ -11,4 +11,4 @@ tables are organized into rows and columns<br/>
 ## Good table manners :carousel_horse:
 *Let's talk a little bit about table naming.* <br/>
 **Table names should be lowercase and should not include spaces**
-- we use underscores in place of spaces. And ideally, a table name would refer to a collective group (like "inventory")<br/> but it's also okay for the table to have a plural name (such as "products").
+> we use underscores in place of spaces. And ideally, a table name would refer to a collective group (like "inventory")<br/> but it's also okay for the table to have a plural name (such as "products").
