@@ -34,3 +34,9 @@ is just what it sounds like: a unique value which identifies a record so that it
 **This value is very often a number.** <br/>
 In the patrons table, it makes sense to use the card_num field as the unique identifier for each patron, not the name field, because it's possible that as our little library grows, two patrons might have the same name.
 
+## The more the merrier :carousel_horse:
+Having more tables, each with a clearly marked subject, is generally better than having fewer tables where information about multiple subjects is combined.<br/>
+Take a look at the patrons and checkouts tables. Now, here's what our patrons and checkouts tables would look like if we tried to combine them.<br/>
+**It's the same data, but much less clear because it now contains duplicate information.** <br/> 
+While we can see that Izzy has two checkouts and Maham has none, the card_num column is no longer unique because of Izzy's multiple checkouts.<br/>
+We can always use SQL to gather information from multiple related tables and connect them if a question requires it, but table topics should remain separate.
