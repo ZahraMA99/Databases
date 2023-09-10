@@ -9,5 +9,10 @@ We use data types for several reasons.<br/>
 2. Some operations only apply to certain data types.
 > It makes sense to multiply a number by another number, but it does not make sense to multiply text by other text for example.
 
-
-   
+## Strings :seedling:
+**In programming, a "string" refers to a sequence of characters such as letters or punctuation.** 
+- On the patrons table, the data in the names field is made up of strings, such as "Maham" and "James".<br/>
+- SQL has several different data types that can hold strings.<br/>
+- Some string data types can only hold short strings, such as a string up to 250 characters.<br/>
+- Storing short strings in a small data type like this saves storage space.<br/>
+- SQL's VARCHAR data type is more flexible and can store small or large strings - up to tens of thousands of characters! Because of its flexibility, VARCHAR is very commonly used for storing strings.
