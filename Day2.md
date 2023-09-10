@@ -19,6 +19,7 @@ It holds data on an individual observation.<br/>Taking a look at the patrons tab
 
 ## Laying the table: fields :notes:
 **A field is a column in a table.** <br/>
+it holds one piece of information about all observations in the table. The "name" field in the patrons table lists all of the names of our library patrons.
 
 ## More table manners :carousel_horse:
 *Because field names must be typed out when querying a database with SQL, field naming is important.* <br/> 
@@ -26,3 +27,10 @@ It holds data on an individual observation.<br/>Taking a look at the patrons tab
 2. A field name should be singular rather than plural because it refers to the information contained in that field for a single record. This is why our table has "card_num" and
 3. "name" fields rather than "card_nums" and "names". Similarly, two fields in a table cannot have the same name. Finally, field names should never share a name with the table they are housed in so that it's clear in all cases whether a field or table is being referred to.
 4. It holds one piece of information about all observations in the table. The "name" field in the patrons table lists all of the names of our library patrons.
+
+## Assigned seats :boat:
+**A unique identifier, sometimes called a "key"** <br/>
+is just what it sounds like: a unique value which identifies a record so that it can be distinguished from other records in the same table.<br/>
+**This value is very often a number.** <br/>
+In the patrons table, it makes sense to use the card_num field as the unique identifier for each patron, not the name field, because it's possible that as our little library grows, two patrons might have the same name.
+
