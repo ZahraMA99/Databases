@@ -13,14 +13,14 @@ tables are organized into rows and columns<br/>
 **Table names should be lowercase and should not include spaces**
 > we use underscores in place of spaces. And ideally, a table name would refer to a collective group (like "inventory")<br/> but it's also okay for the table to have a plural name (such as "products").
 
-## Laying the table: records
+## Laying the table: records :notes:
 **A record is a row in a table.** <br/>
 It holds data on an individual observation.<br/>Taking a look at the patrons table, we see that the table has four records: one for each of the patrons. The record for Jasmin indicates that she became a member in 2022 and owes two dollars and five cents in fines.
 
-## Laying the table: fields
+## Laying the table: fields :notes:
 **A field is a column in a table.** <br/>
 
-## More table manners
+## More table manners :carousel_horse:
 *Because field names must be typed out when querying a database with SQL, field naming is important.* <br/> 
 1. Generally, field names should be lowercase and should not involve spaces.<br/> 
 2. A field name should be singular rather than plural because it refers to the information contained in that field for a single record. This is why our table has "card_num" and
