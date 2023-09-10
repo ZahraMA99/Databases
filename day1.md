@@ -19,3 +19,6 @@ A relational database defines relationships between tables of data inside the da
 2. Many users can write queries to gather insights from the data at the same time.
 
 > When a database is queried, the data stored inside the database does not change: rather, the database information is accessed and presented according to instructions in the query.
+
+## SQL
+SQL! SQL, or S-Q-L, is short for Structured Query Language. It is the most widely used programming language for creating, querying, and updating relational databases.
