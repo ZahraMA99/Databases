@@ -15,9 +15,10 @@
 2. Berkeley, and was sponsored by America's famous Defense Advanced Research Projects Agency.
 3. DARPA. DARPA also sponsored research leading to creating the internet, the computer mouse, and GPS!
 4. The name "PostgreSQL" is used to refer to both the database system itself as well as the SQL flavor used with it.
-5. SQL Server is also a relational database system which comes in both free and enterprise versions.
-6. It was created by Microsoft, so it pairs well with other Microsoft products.
-7. T-SQL is Microsoft's proprietary flavor of SQL, used with SQL Server databases.
+- SQL Server:
+1. is also a relational database system which comes in both free and enterprise versions.
+2. It was created by Microsoft, so it pairs well with other Microsoft products.
+3. T-SQL is Microsoft's proprietary flavor of SQL, used with SQL Server databases.
 
 ## Comparing PostgreSQL and SQL Server :seedling:
 - Think of SQL flavors as dialects of the same language.
