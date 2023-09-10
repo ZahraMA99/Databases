@@ -25,6 +25,6 @@ Now that we understand how data is organized in databases, we can begin drawing 
 ## Selecting multiple fields :mushroom:
 - As you might expect, we can select three fields such as name, card_num, and total_fine by listing all three field names after the SELECT keyword and separating them with commas.
 
-## Selecting all fields :mushroom:
+## Selecting all fields :ear_of_rice:
 - What if we'd like to select all four fields in the patrons table? We could list out the four field names after the SELECT statement,
-- but there's an even easier way: we can tell SQL to select all fields using an asterisk in place of the four field names.
+- but there's an even easier way: we can tell SQL to select all fields using an asterisk (*) in place of the four field names.
