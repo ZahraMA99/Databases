@@ -1,7 +1,7 @@
 ##  Introducing queries :jack_o_lantern:
 Now that we understand how data is organized in databases, we can begin drawing insights using SQL queries!
 
-## Keywords :jack_o_lantern:
+## Keywords :frog:
 **Keywords are reserved words used to indicate what operation we'd like our code to perform.**
 - The two most common keywords are SELECT and FROM. 
 1. The SELECT keyword indicates which fields should be selected - in this case, the name field.
