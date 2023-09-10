@@ -21,3 +21,25 @@ We use data types for several reasons.<br/>
 **Integer data types store whole numbers** <br/>
 - such as the years in the member_year column of the patrons table.<br/>
 - Just as with strings, SQL offers a few different data types for storing integers, depending on how big the numbers we'd like to store are. INT, a common SQL integer data type, can store numbers from less than negative two billion to more than positive two billion!
+
+## Floats :cherry_blossom:
+**Float data types store numbers that include a fractional part** <br/> 
+- such as the 2-point-05 dollars that one patron, Jasmin, owes in fines.<br/> 
+- Just as we might expect, SQL also offers several float data types depending on how many digits the numbers in the field are expected to be.<br/> 
+- The NUMERIC data type can store floats which have up to 38 digits total - including those before and after the decimal point.
+
+## Schemas :earth_africa:
+**Now that we're familiar with data types, we can look at a database schema.** 
+- Schemas are often referred to as "blueprints" of databases.
+- A schema shows a database's design, such as what tables are included in the database and any relationships between its tables.
+- A schema also lets the reader know what data type each field can hold.
+- The schema for our library database shows the VARCHAR data type is used for strings like book title, author, and genre.
+- We can also see that the patrons table is related to the checkouts table, but not the books table.
+
+## Database storage :crystal_ball:
+Finally, let's discuss storage.<br/>
+**The information we find in a database table is physically stored on the hard disk of a server.** 
+- Servers are centralized computers that perform services via requests made over a network.
+- In our case, the service performed is data access, but servers are also used to access websites or files stored on the server.
+- Any computer can be a server if it is set up to provide a service, even a laptop!
+- However, servers are generally very powerful and large machines, because they are best equipped to handle a high volume of requests and data.
