@@ -23,13 +23,33 @@
 - If we want to satisfy all criteria in our filter, we need to use AND with WHERE.
 - For example, this query gives us the titles of films released between 1994 and 2000.
 - We need to specify the field name separately for every AND condition as with OR.
+```js
+// Select the title and release_year for all German-language films released before 2000.
+SELECT title, release_year
+FROM films 
+WHERE language = 'German'
+    AND release_year < 2000;
+```
+```js
+// Update the query from the previous step to show German-language films released after 2000 rather than before.
+SELECT title, release_year
+FROM films
+WHERE release_year > 2000
+	AND language = 'German';
+```
 
 ## AND, OR :rabbit: :bug:
 - Let's kick it up a notch. We now want to filter films released in 1994 OR 1995, AND with a certification of either PG or R.
 - Thankfully, we can combine AND and OR to answer this question.
 - If a query has multiple filtering conditions, we will need to enclose the individual clauses in parentheses to ensure the correct execution order;
 - otherwise, we may not get the expected results.
-
+```js
+// Select all details for German-language films released after 2000 but before 2010 using only WHERE and AND.
+SELECT *
+FROM films
+WHERE (release_year > 2000 AND release_year < 2010)
+	AND language = 'German';
+```
 ## BETWEEN, AND  :monkey: :rabbit:
 - As we've learned, we can use this query to get titles of all films released in and between 1994 and 2000.
 - Checking for ranges like this is very common, so in SQL the BETWEEN keyword provides a valuable shorthand for filtering values within a specified range.
