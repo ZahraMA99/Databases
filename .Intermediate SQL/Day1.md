@@ -18,6 +18,21 @@
 ## COUNT() multiple fields :blossom:
 - If we want to count more than one field, we need to use COUNT multiple times.
 - Here we are counting both the number of names and birth dates present in the people table.
+```js
+-- Count the number of records in the people table
+SELECT Count(Id) AS count_records
+FROM people;
+```
+```js
+-- Count the number of birthdates in the people table
+SELECT Count(birthdate) AS count_birthdate
+FROM people;
+```
+```js
+-- Count the records for languages and countries represented in the films table
+SELECT Count(language) AS count_languages, Count(country) AS count_countries
+FROM films;
+```
 
 ## Using * with COUNT() :evergreen_tree:
 - Using COUNT with a field name tells us how many values are in a field. However, if we want to count the number of records in a table, we can call COUNT with an asterisk.
