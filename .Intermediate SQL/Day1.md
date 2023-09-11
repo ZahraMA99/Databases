@@ -44,7 +44,11 @@ FROM films;
 - Often, our results will include duplicates. We can use the DISTINCT keyword to select all the unique values from a field.
 - This might be useful if, for example, we're interested in knowing which languages are represented in the films table.
 - Adding DISTINCT to our query will remove all duplicates, as we can see here.
-
+```js
+// Return the unique countries from the films table
+SELECT DISTINCT country
+From films;
+```
 ## COUNT() with DISTINCT :racehorse:
 - Combining COUNT with DISTINCT is also common to count the number of unique values in a field.
 - This query counts the number of distinct birth dates in the people table.
