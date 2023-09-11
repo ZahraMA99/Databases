@@ -29,7 +29,13 @@
 
 ## Comparison operators :tulip:
 - Let's recap all the comparison operators we can use with WHERE to filter numbers.
-- We have: greater than (that also means after), less than (that also means before), equal to, greater than or equal to, less than or equal to, and not equal to.
+- We have:
+1. greater than (that also means after)
+2. less than (that also means before),
+3. equal to,
+4. greater than or equal to,
+5. less than or equal to,
+6. not equal to.
 
 ## WHERE with strings :paw_prints:
 - WHERE and the comparison operator, equals, can also be used with strings.
