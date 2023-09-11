@@ -74,7 +74,33 @@ WHERE (release_year > 2000 AND release_year < 2010)
 - Checking for ranges like this is very common, so in SQL the BETWEEN keyword provides a valuable shorthand for filtering values within a specified range.
 - This second query is equivalent to the one on the left.
 - It's important to remember that BETWEEN is inclusive, meaning the results contain the beginning and end values.
+```js
+// Select the title and release_year of all films released between 1990 and 2000 (inclusive) using BETWEEN.
+SELECT title, release_year 
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000;
 
+// Build on your previous query to select only films with a budget over $100 million.
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+	AND budget > 100000000;
+
+// Now, restrict the query to only return Spanish-language films.
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+	AND budget > 100000000
+	AND language = 'Spanish';
+
+// Finally, amend the query to include all Spanish-language or French-language films with the same criteria.
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+	AND budget > 100000000
+	AND (language = 'Spanish' OR language = 'French');
+
+```
 ## BETWEEN, AND, OR :monkey: :rabbit: :bug:
 - Like the WHERE clause, the BETWEEN clause can be used with multiple AND and OR operators, so we can build up our queries and make them even more powerful!
 - For example, we can get the titles of all films released between 1994 and 2000 from the United Kingdom.
