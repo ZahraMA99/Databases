@@ -12,15 +12,34 @@
 - We will focus on filtering numbers in this lesson.
 - To do this, we will be using comparison operators such as greater than.
 - Here is an example of a query where we filtered to see only films released after the year 1960 using the greater than operator.
+```js
+//Select the film_id and imdb_score from the reviews table and filter on scores higher than 7.0.
+SELECT film_id, imdb_score
+FROM reviews
+WHERE imdb_score > 7.0;
+```
 
 ## Comparison operators :new_moon:
 - Let's explore some of the other operators. We would use the less-than operator to see films released before the year 1960.
+```js
+// Select film_ids and facebook_likes for ten records with less than 1000 likes 
+SELECT film_id, facebook_likes
+FROM reviews
+WHERE facebook_likes < 1000
+LIMIT 10;
+```
 
 ## Comparison operators :earth_asia:
 - We would use the less than or equal to operator to see films released during or before the year 1960.
 
 ## Comparison operators :seedling:
 - If we want to see films released in a specific year, we can use equals.
+```js
+// Count how many records have a num_votes of at least 100,000; use the alias films_over_100K_votes.
+SELECT Count(num_votes) AS films_over_100K_votes
+FROM reviews
+WHERE num_votes >= 100000;
+```
 
 ## Comparison operators :palm_tree:
 - Here is a final example that isn't as intuitive as the others.
