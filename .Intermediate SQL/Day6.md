@@ -14,6 +14,22 @@
 - For example, the query on the right matches only three-letter names like Eve.
 - We'd also see names like Eva if it were in our dataset.
 - Eva Mendes, however, would not be visible unless the search criteria looked like this.
+```js
+// Select the names that start with B
+SELECT name
+FROM people
+WHERE name LIKE 'B%';
+
+// Select the names of people whose names have 'r' as the second letter.
+SELECT name
+FROM people
+WHERE name LIKE '_r%';
+
+// Select the names of people whose names don't start with 'A'.
+SELECT name
+FROM people
+WHERE name NOT LIKE 'A%';
+```
 
 ## NOT LIKE :rocket:
 - We can also use the NOT LIKE operator to find records that don't match the specified pattern.
