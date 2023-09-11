@@ -1,7 +1,6 @@
 ## Summarizing data :honey_pot:
 **Fantastic job getting this far! Let's learn about summarizing data with aggregate functions.**
 
-## Summarizing data
 - When analyzing data, we often want to understand the dataset as a whole in addition to looking at individual records.
 - One way to do this is to summarize the data using SQL's aggregate functions. An aggregate function performs a calculation on several values and returns a single value.
 
