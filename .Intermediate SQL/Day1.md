@@ -45,9 +45,14 @@ FROM films;
 - This might be useful if, for example, we're interested in knowing which languages are represented in the films table.
 - Adding DISTINCT to our query will remove all duplicates, as we can see here.
 ```js
-// Return the unique countries from the films table
+// Return the unique countries represented in the films table using DISTINCT.
 SELECT DISTINCT country
 From films;
+```
+```js
+// Return the number of unique countries represented in the films table, aliased as count_distinct_countries.
+SELECT Count(distinct country) AS count_distinct_countries
+FROM films;
 ```
 ## COUNT() with DISTINCT :racehorse:
 - Combining COUNT with DISTINCT is also common to count the number of unique values in a field.
