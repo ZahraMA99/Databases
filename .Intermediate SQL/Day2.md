@@ -30,4 +30,7 @@
 
 ## Final note on errors :gun:
 - There are a few more SQL errors out there, but the three mentioned in this lesson will be the most common ones we will encounter.
+  1. Misspelling.
+  2. Incorrect capitalization.
+  3. Incorrect or missing puncuation esspicially commas.
 - Debugging is a major skill, and the best way to master this skill is to make mistakes and learn from them.
