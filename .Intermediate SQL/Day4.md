@@ -60,6 +60,12 @@ WHERE num_votes >= 100000;
 - WHERE and the comparison operator, equals, can also be used with strings.
 - In these cases, we will have to use single quotation marks around the strings we want to filter.
 - For example, here, we want to filter titles where the country is Japan.
+```js
+// Select and count the language field using the alias count_spanish and Apply a filter to select only Spanish from the language field.
+SELECT Count(language) AS count_spanish
+FROM films
+WHERE language = 'Spanish';
+```
 
 ## Order of execution :hibiscus:
 - A final note on using WHERE. Similar to LIMIT, this clause comes after the FROM statement when writing a query.
