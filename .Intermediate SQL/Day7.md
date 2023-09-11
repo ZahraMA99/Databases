@@ -12,6 +12,18 @@
 - Suppose our goal is to analyze posthumous success using data from the people table.
 - We might make the wrong assumption that because we have a field name called deathdate, this information is available for everyone.
 - Half of them are, in fact, NULL, as we can see on the right, so we would make an inaccurate judgment on what the data means.
+  
+```js
+// Select the title of every film that doesn't have a budget associated with it and use the alias no_budget_info.
+SELECT title AS no_budget_info
+FROM films
+WHERE budget IS NULL;
+
+// Count the number of films with a language associated with them and use the alias count_language_known.
+SELECT COUNT(*) AS count_language_known
+FROM films
+WHERE language IS NOT NULL;
+```
 
 ## IS NULL :oncoming_automobile:
 - One quick way to see how much of our data is missing is by using IS NULL with the WHERE clause.
