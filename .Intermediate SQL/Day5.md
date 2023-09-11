@@ -2,16 +2,6 @@
 **Great work on filtering numbers! Our SQL skills are growing fast. Next up, we will look at how to filter with multiple criteria.**
 
 ## Multiple criteria :whale2:
-- There will often be the case that we have more than one criteria we'd like to meet.
-- Looking again at our favorite coats, perhaps we want narrow down our choices to coats
-
-## Multiple criteria :whale2:
-- that are yellow
-
-## Multiple criteria :whale2:
-- and shorter in length.
-
-## Multiple criteria :whale2:
 - We will be learning about three additional keywords that will allow us to enhance our filters when using WHERE by adding multiple criteria.
 - These are OR, AND, and BETWEEN. In the context of our coats, we could look at coats where the color is yellow or the length is short,
 - or we could filter for coats where both criteria are true.
