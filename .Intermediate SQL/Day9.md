@@ -13,22 +13,22 @@ Well done! Now we will combine our filtering skills with our new summarizing ski
 - meaning there are 194 budgets recorded for the year 2010 in the films table.
 ```js
 // Calculate the sum of gross from the year 2000 or later
-SELECT SUM(gross) AS total_gross
+SELECT Sum(gross) AS total_gross
 FROM films
 WHERE release_year >= 2000;
 
 // Calculate the average amount grossed by all films whose titles start with the letter 'A' and alias with avg_gross_A
-SELECT AVG(gross) as avg_gross_A
+SELECT Avg(gross) as avg_gross_A
 FROM FILMS
 WHERE title LIKE 'A%';
 
 // Calculate the lowest gross film in 1994 and use the alias lowest_gross.
-SELECT MIN(gross) AS lowest_gross
+SELECT Min(gross) AS lowest_gross
 FROM films
 WHERE release_year = 1994;
 
 // Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross
-SELECT MAX(gross) AS highest_gross
+SELECT Max(gross) AS highest_gross
 FROM films
 WHERE release_year BETWEEN 2000 AND 2012;
 ```
