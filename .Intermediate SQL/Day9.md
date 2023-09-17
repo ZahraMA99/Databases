@@ -27,8 +27,7 @@ SELECT MIN(gross) AS lowest_gross
 FROM films
 WHERE release_year = 1994;
 
-// 
-Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross
+// Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross
 SELECT MAX(gross) AS highest_gross
 FROM films
 WHERE release_year BETWEEN 2000 AND 2012;
