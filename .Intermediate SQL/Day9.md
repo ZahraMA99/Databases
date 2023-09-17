@@ -1,7 +1,7 @@
-## Summarizing subsets
+## Summarizing subsets :sweat_drops:
 Well done! Now we will combine our filtering skills with our new summarizing skills.
 
-## Using WHERE with aggregate functions
+## Using WHERE with aggregate functions :notes:
 - We can combine aggregate functions with the WHERE clause to gain further insights from our data.
 - That's because the WHERE clause executes before the SELECT statement.
 - For example, to get the average budget of movies made in 2010 or later, we would select the average of the budget field from the films table where the release year is greater than or equal to 2010.
@@ -12,7 +12,7 @@ Well done! Now we will combine our filtering skills with our new summarizing ski
 - Finally, we query the count of the number of budgets using the COUNT function, which gives us the total number of non-missing values in the budget field.
 - meaning there are 194 budgets recorded for the year 2010 in the films table.
 
-## ROUND()
+## ROUND() :hibiscus:
 - Now that we are doing all sorts of things with our numerical values, we'll likely want to clean up some of the crazy decimals that might appear.
 - In SQL, we can use ROUND() to round our number to a specified decimal.
 - There are two parameters for ROUND(): the number we want to round and the decimal place we want to round to.
@@ -20,7 +20,7 @@ Well done! Now we will combine our filtering skills with our new summarizing ski
 - The second parameter in our ROUND() function is optional, so we can leave it out if we want to round to a whole number.
 - We would get the same result if we passed zero as the second argument, as it is the default when no number is given.
 
-## ROUND() using a negative parameter
+## ROUND() using a negative parameter :sunflower:
 - Here is a tricky one: we could also pass a negative number as the second parameter and still get a result.
 - Here, the function is rounding to the left of the decimal point instead of the right.
 - Using negative five as the decimal place parameter will cause the function to round to the hundred thousand or five places to the left.
