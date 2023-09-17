@@ -33,7 +33,7 @@ Notice that we don't have to select the field we are sorting on. For example, he
 ## ORDER BY multiple fields
 ORDER BY can also be used to sort on multiple fields. It will sort by the first field specified, then sort by the next, etc. To specify multiple fields, we separate the field names with a comma. The second field we sort by can be thought of as a tie-breaker when the first field is not decisive in telling the order. Here is an example. Let's say we wanted to find the best movie. In the first query, we are only sorting the films by the number of Oscar wins and getting a tie. We can break that tie by adding a second sorting field by seeing which film has the most wins and the highest imdb_score.
 ```JS
--- Select the release year, duration, and title sorted by release year and duration
+// Select the release year, duration, and title sorted by release year and duration
 SELECT release_year, duration, title
 FROM films
 ORDER BY release_year ASC, duration ASC;
