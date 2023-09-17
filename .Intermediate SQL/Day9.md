@@ -39,7 +39,11 @@ WHERE release_year BETWEEN 2000 AND 2012;
 - Here we have re-calculated the same average budget as before, but this time we have included ROUND() and specified we want to round to two decimal places because we are dealing with currency.
 - The second parameter in our ROUND() function is optional, so we can leave it out if we want to round to a whole number.
 - We would get the same result if we passed zero as the second argument, as it is the default when no number is given.
-
+```js
+// Round the average number of facebook_likes to one decimal place
+SELECT Round(AVG(facebook_likes), 1) AS avg_facebook_likes
+FROM reviews;
+```
 ## ROUND() using a negative parameter :sunflower:
 - Here is a tricky one: we could also pass a negative number as the second parameter and still get a result.
 - Here, the function is rounding to the left of the decimal point instead of the right.
