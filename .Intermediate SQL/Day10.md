@@ -12,7 +12,23 @@ Welcome back! In this lesson, we will learn about using more arithmetic in our q
 - Similar to other programming languages, SQL assumes that we want to get an integer back if we divide an integer by an integer.
 - So be careful! When dividing, we can add decimal places to our numbers if we want more precision.
 - For example, SELECT four-point-zero divided by three-point-zero gives us the result we would expect: 1-point-3 repeating.
+```js
+// Calculate the title and duration_hours from films
+SELECT title, duration/60.0 AS duration_hours
+FROM films;
 
+//  Calculate the percentage of people who are no longer alive and alias the result as percentage_dead
+SELECT COUNT(deathdate)*100.0/COUNT(*) AS percentage_dead
+FROM people;
+
+// Find how many decades the films table covers by using MIN() and MAX() and alias as number_of_decades
+SELECT (MAX(release_year)-MIN(release_year))/10.0 AS number_of_decades
+FROM films;
+
+// Round duration_hours to two decimal places
+SELECT title, ROUND(duration/ 60.0,2) AS duration_hours
+FROM films;
+```
 ## Aggregate functions vs. arithmetic :sweat_drops:
 - What's the difference between using aggregate functions and arithmetic?
 - The key difference is that aggregate functions, like SUM, perform their operations on the fields vertically while arithmetic adds up the records horizontally.
