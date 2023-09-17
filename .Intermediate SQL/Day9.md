@@ -11,7 +11,28 @@ Well done! Now we will combine our filtering skills with our new summarizing ski
 - 600 million feels like a lot again for a movie budget, but this is in Indian Rupees for the movie "Kites".
 - Finally, we query the count of the number of budgets using the COUNT function, which gives us the total number of non-missing values in the budget field.
 - meaning there are 194 budgets recorded for the year 2010 in the films table.
+```js
+// Calculate the sum of gross from the year 2000 or later
+SELECT SUM(gross) AS total_gross
+FROM films
+WHERE release_year >= 2000;
 
+// Calculate the average amount grossed by all films whose titles start with the letter 'A' and alias with avg_gross_A
+SELECT AVG(gross) as avg_gross_A
+FROM FILMS
+WHERE title LIKE 'A%';
+
+// Calculate the lowest gross film in 1994 and use the alias lowest_gross.
+SELECT MIN(gross) AS lowest_gross
+FROM films
+WHERE release_year = 1994;
+
+// 
+Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross
+SELECT MAX(gross) AS highest_gross
+FROM films
+WHERE release_year BETWEEN 2000 AND 2012;
+```
 ## ROUND() :hibiscus:
 - Now that we are doing all sorts of things with our numerical values, we'll likely want to clean up some of the crazy decimals that might appear.
 - In SQL, we can use ROUND() to round our number to a specified decimal.
