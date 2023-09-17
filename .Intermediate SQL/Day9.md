@@ -51,6 +51,6 @@ FROM reviews;
 - ROUND() can only be used with numerical fields.
 ```js
 // Calculate the average budget rounded to the thousands
-SELECT ROUND(AVG(budget), -3) AS avg_budget_thousands
+SELECT Round(AVG(budget), -3) AS avg_budget_thousands
 FROM films;
 ```
