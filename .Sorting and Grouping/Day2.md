@@ -41,7 +41,12 @@ group by release_year;
 ## Order of execution
 - GROUP BY fits into our order after FROM and before all other clauses.
 - Our updated queries will begin with FROM, followed by grouping, selecting the data and creating the alias, sorting the results, and limiting them to the desired number.
-
+```js
+// Find the release_year, country, and max_budget, then group and order by release_year and country
+SELECT release_year, country, Max(budget) AS max_budget
+from films
+group by release_year, country;
+```
 **Link: https://iqraanwar.medium.com/6-sorting-results-a0e8c773719b**
 ## Let's practice!
 In the following exercises, we'll examine our film database to find out about release year, review, and budget patterns. Let's practice
