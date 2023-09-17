@@ -12,14 +12,16 @@ Well done! Now we will combine our filtering skills with our new summarizing ski
 - Finally, we query the count of the number of budgets using the COUNT function, which gives us the total number of non-missing values in the budget field.
 - meaning there are 194 budgets recorded for the year 2010 in the films table.
 
-5. ROUND()
-01:31 - 02:07
-Now that we are doing all sorts of things with our numerical values, we'll likely want to clean up some of the crazy decimals that might appear. In SQL, we can use ROUND() to round our number to a specified decimal. There are two parameters for ROUND(): the number we want to round and the decimal place we want to round to. Here we have re-calculated the same average budget as before, but this time we have included ROUND() and specified we want to round to two decimal places because we are dealing with currency.
+## ROUND()
+- Now that we are doing all sorts of things with our numerical values, we'll likely want to clean up some of the crazy decimals that might appear.
+- In SQL, we can use ROUND() to round our number to a specified decimal.
+- There are two parameters for ROUND(): the number we want to round and the decimal place we want to round to.
+- Here we have re-calculated the same average budget as before, but this time we have included ROUND() and specified we want to round to two decimal places because we are dealing with currency.
+- The second parameter in our ROUND() function is optional, so we can leave it out if we want to round to a whole number.
+- We would get the same result if we passed zero as the second argument, as it is the default when no number is given.
 
-6. ROUND() to a whole number
-02:07 - 02:24
-The second parameter in our ROUND() function is optional, so we can leave it out if we want to round to a whole number. We would get the same result if we passed zero as the second argument, as it is the default when no number is given.
-
-7. ROUND() using a negative parameter
-02:24 - 02:54
-Here is a tricky one: we could also pass a negative number as the second parameter and still get a result. Here, the function is rounding to the left of the decimal point instead of the right. Using negative five as the decimal place parameter will cause the function to round to the hundred thousand or five places to the left. ROUND() can only be used with numerical fields.
+## ROUND() using a negative parameter
+- Here is a tricky one: we could also pass a negative number as the second parameter and still get a result.
+- Here, the function is rounding to the left of the decimal point instead of the right.
+- Using negative five as the decimal place parameter will cause the function to round to the hundred thousand or five places to the left.
+- ROUND() can only be used with numerical fields.
