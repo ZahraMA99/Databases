@@ -20,17 +20,28 @@ We've learned how to sort data. Next, we'll look at grouping our results.
 - The order in which we write the fields affects how the data is grouped.
 - The query here selects and groups certification and language while aggregating the title.
 - The result shows that we have five films that have missing values for both certification and language, two films that are unrated and in Japanese, two films that are rated R and in Norwegian, and so on.
-
+```js
+// Find the release_year and film_count of each year
+SELECT release_year, Count(*) AS film_count
+from films
+Group By release_year;
+```
 ## GROUP BY with ORDER BY
 - We can combine GROUP BY with ORDER BY to group our results, make a calculation, and then order our results.
 - For example, we can clean up one of our previous queries by sorting the results by the title count in descending order.
 - Here is that query without ORDER BY, and this is the same query with ordering added.
 - ORDER BY is always written after GROUP BY, and notice that we can refer back to the alias within the query.
 - That is because of the order of execution. It looks like movies rated R are most common in our database.
-
+```js
+// Find the release_year and average duration of films for each year
+SELECT release_year, AVG(duration) AS avg_duration
+from films 
+group by release_year;
+```
 ## Order of execution
 - GROUP BY fits into our order after FROM and before all other clauses.
 - Our updated queries will begin with FROM, followed by grouping, selecting the data and creating the alias, sorting the results, and limiting them to the desired number.
 
+**Link: https://iqraanwar.medium.com/6-sorting-results-a0e8c773719b**
 ## Let's practice!
 In the following exercises, we'll examine our film database to find out about release year, review, and budget patterns. Let's practice
