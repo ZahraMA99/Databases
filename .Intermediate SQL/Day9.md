@@ -49,3 +49,8 @@ FROM reviews;
 - Here, the function is rounding to the left of the decimal point instead of the right.
 - Using negative five as the decimal place parameter will cause the function to round to the hundred thousand or five places to the left.
 - ROUND() can only be used with numerical fields.
+```js
+// Calculate the average budget rounded to the thousands
+SELECT ROUND(AVG(budget), -3) AS avg_budget_thousands
+FROM films;
+```
