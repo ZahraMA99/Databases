@@ -71,3 +71,12 @@ ON c1.country_code = c2.code
 ```
 
 **LINK**: https://iqraanwar.medium.com/08-outer-joins-cross-joins-and-self-joins-790926108c08
+
+```JS
+// Modify this query to use RIGHT JOIN instead of LEFT JOIN
+SELECT countries.name AS country, languages.name AS language, percent
+FROM languages
+RIGHT JOIN countries
+USING(code)
+ORDER BY language;
+```
