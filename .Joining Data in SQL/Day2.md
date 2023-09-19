@@ -25,3 +25,25 @@ The last type of relationship we'll discuss is a many-to-many relationship. An e
 7. Let's practice!
 03:02 - 03:12
 Now that we have discussed the various relationships that can exist between tables, let's put this into practice!
+
+```js
+/* Start with the join statement in line 6; perform an inner join with the countries table as c on the left with the languages table as l on the right.
+Make use of the USING keyword to join on code in line 8.
+Lastly, in line 2, select the country name, aliased as country, and the language name, aliased as language. */
+
+SELECT c.name AS country, l.name AS language 
+FROM Languages AS l
+INNER JOIN countries AS c
+USING (code);
+
+/* Rearrange the SELECT statement so that the language column appears on the left and the country column on the right.
+Sort the results by language.*/
+
+SELECT l.name AS language, c.name AS country
+FROM countries AS c
+INNER JOIN languages AS l
+USING(code)
+-- Order the results by language
+ORDER BY language ASC;
+
+```
