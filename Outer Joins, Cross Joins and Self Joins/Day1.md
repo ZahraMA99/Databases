@@ -38,7 +38,7 @@ Now that you're familiar with both LEFT and RIGHT JOIN, let's discuss why RIGHT 
 03:49 - 03:57
 Nice work on navigating some of the most popular types of joins! Let's practice.
 
-````js
+```js
 /*
 Perform an inner join with cities AS c1 on the left and countries as c2 on the right.
 Use code as the field to merge your tables on.
@@ -68,3 +68,6 @@ SELECT
 FROM cities AS c1
 LEFT JOIN countries AS c2
 ON c1.country_code = c2.code
+```
+
+**LINK**: https://iqraanwar.medium.com/08-outer-joins-cross-joins-and-self-joins-790926108c08
