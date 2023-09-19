@@ -45,3 +45,13 @@ In our INNER JOIN, we've had to type out "president" and "prime_minister" severa
 12. Using USING
 04:01 - 04:23
 Before we end this lesson, let's add one more SQL shortcut to make our query even more concise. When joining on two identical column names, we can employ the USING command followed by the shared column name in parentheses. Here, since the join field is named "country" in both tables, we can use USING.
+
+```JS
+// Complete the SELECT statement to keep only the name of the city, the name of the country, and the region the country is located in (in the order specified).
+// Alias the name of the city AS city and the name of the country AS country.
+
+SELECT cities.name AS city, countries.name AS country, countries.region
+FROM cities
+INNER JOIN countries 
+ON cities.country_code = countries.code;
+```
