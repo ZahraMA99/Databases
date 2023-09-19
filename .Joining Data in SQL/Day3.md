@@ -33,3 +33,26 @@ We can limit the records returned by supplying an additional field to join on by
 9. Let's practice!
 03:27 - 03:35
 Now that we know how to chain multiple joins, as well as how to join on multiple fields, let's get some practice!
+```js
+/*
+Perform an inner join of countries AS c (left) with populations AS p (right), on code.
+Select name, year and fertility_rate.*/
+
+// Select relevant fields
+SELECT name, year, fertility_rate
+// Inner join countries and populations, aliased, on code
+FROM countries AS c
+INNER JOIN populations AS p
+ON c.code = p.country_code;
+
+/* Chain another inner join to your query with the economies table AS e, using code.
+Select name, and using table aliases, select year and unemployment_rate from economies.
+*/
+
+SELECT name, e.year, fertility_rate, unemployment_rate
+FROM countries AS c
+INNER JOIN populations AS p
+ON c.code = p.country_code
+INNER JOIN economies AS e
+ON c.code = e.code;
+```
