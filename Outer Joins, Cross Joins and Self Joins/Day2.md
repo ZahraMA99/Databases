@@ -37,3 +37,5 @@ Here is a look at our result. Note that there are null values in both the prime_
 10. Let's practice!
 02:45 - 02:49
 Time for some practice!
+
+**LINK**: https://iqraanwar.medium.com/08-outer-joins-cross-joins-and-self-joins-790926108c08
