@@ -49,3 +49,5 @@ The second key application of CASE with AVG is in the calculation of percentages
 13. Let's practice!
 04:41 - 04:51
 Now it's your turn to practice creating CASE statements with aggregate functions.
+
+**link**: https://medium.com/艾蜜莉讀讀寫寫/datacamp-functions-for-manipulating-data-in-sql-server-a46a24bc1d6f
